@@ -1,19 +1,19 @@
 <p align="center">
-  <img alt="OpenCVE" src="https://raw.githubusercontent.com/pkeech/k3d-dev/main/docs/k3d-logo.png">
+  <img alt="K3D-Logo" src="https://raw.githubusercontent.com/pkeech/k3d-dev/main/docs/k3d-logo.png" width="300">
 </p>
 
 <h1 align="center">
 K3D Development Environment
 </h1>
 
-## Project Description
+### Project Description
 
-This project was created to demostrate how to use a local K3d cluster for development purposes. 
+This project was created to demostrate how to use a local K3D cluster for development purposes. 
 
-## What is K3D?
+### What is K3D?
 
-k3d is a lightweight wrapper to run k3s (Rancher Lab’s minimal Kubernetes distribution) in docker.
+K3D is a lightweight wrapper to run K3S (Rancher Lab’s minimal Kubernetes distribution) in docker.
 
-k3d makes it very easy to create single- and multi-node k3s clusters in docker, e.g. for local development on Kubernetes.
+K3D makes it very easy to create single- and multi-node K3S clusters in docker, e.g. for local development on Kubernetes.
 
-[Documentation](https://k3d.io/)
+[K3D Documentation](https://k3d.io/)
