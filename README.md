@@ -2,9 +2,12 @@
   <img alt="K3D-Logo" src="https://raw.githubusercontent.com/pkeech/k3d-dev/main/docs/k3d-logo.png" width="300">
 </p>
 
-<h1 align="center">
-K3D Development Environment
-</h1>
+<p align="center">
+  <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/pkeech/k3d-dev">
+  <img alt="GitHub issues" src="https://img.shields.io/github/issues/pkeech/k3d-dev">
+</p>
+
+# K3D Development Environment
 
 ### Project Description
 
