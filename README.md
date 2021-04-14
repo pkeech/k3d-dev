@@ -1,5 +1,5 @@
 <p align="center">
-  <img alt="K3D-Logo" src="https://raw.githubusercontent.com/pkeech/k3d-dev/main/docs/k3d-logo.png" width="300">
+  <img alt="K3D-Logo" src="https://raw.githubusercontent.com/pkeech/k3d-dev/main/docs/k3d-logo.png" width="400">
 </p>
 
 <p align="center">
