@@ -27,6 +27,8 @@ help:
 	@echo '  prep    	Clean Up Local Docker Instance & Pull K3D Docker Images'
 	@echo '  create-dev  	Create K3D Development Cluster'
 	@echo '  delete-dev  	Destroy K3D Development Cluster'
+	@echo '  stop-dev  	Stop K3D Development Cluster'
+	@echo '  restart-dev  	Restart K3D Development Cluster'
 	@echo ''
 
 ## PREP LOCAL MACHINES
