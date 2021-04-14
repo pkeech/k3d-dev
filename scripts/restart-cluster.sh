@@ -7,8 +7,8 @@ source "scripts/common.sh"
 CLUSTER_NAME=$1
 
 ## SECTION: RESTART CLUSTER
-section "Restarting Development Cluster"
-info_pause_exec "Restarting Development Cluster" "k3d cluster start $CLUSTER_NAME"
+section "Restarting $CLUSTER_NAME Cluster"
+info_pause_exec "Restarting $CLUSTER_NAME Cluster" "k3d cluster start $CLUSTER_NAME"
 
 ## SECTION: RESTARTING TILT
 section "Starting Tilt"

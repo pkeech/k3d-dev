@@ -11,8 +11,9 @@
 .PHONY: run prep
 
 ## DEFINE VARIALBE AND DEFAULTS
-configfile = ./clusters/dev.yaml
-clustername = "dev"
+configfile = ./clusters/example.yaml
+clustername = "example"
+tiltfile = "./tilt/example.Tiltfile"
 
 ## HELP FILE
 help:
@@ -25,28 +26,28 @@ help:
 	@echo ''
 	@echo 'Arguments:'
 	@echo '  prep    	Clean Up Local Docker Instance & Pull K3D Docker Images'
-	@echo '  create-dev  	Create K3D Development Cluster'
-	@echo '  delete-dev  	Destroy K3D Development Cluster'
-	@echo '  stop-dev  	Stop K3D Development Cluster'
-	@echo '  restart-dev  	Restart K3D Development Cluster'
+	@echo '  create-cluster  	Create K3D Cluster'
+	@echo '  delete-cluster  	Destroy K3D Cluster'
+	@echo '  stop-cluster  	Stop K3D Cluster'
+	@echo '  restart-cluster  	Restart K3D Cluster'
 	@echo ''
 
 ## PREP LOCAL MACHINES
 prep:
 	scripts/prep.sh
 
-## CREATE DEVELOPMENT CLUSTER
-create-dev:
-	scripts/cluster-dev.sh $(configfile) $(clustername)
+## CREATE CLUSTER
+create-cluster:
+	scripts/create-cluster.sh $(configfile) $(clustername) $(tiltfile)
 
-## DELETE DEVELOPMENT CLUSTER
-delete-dev:
-	scripts/delete-dev.sh $(clustername)
+## DELETE CLUSTER
+delete-cluster:
+	scripts/delete-cluster.sh $(clustername)
 
-## STOP DEVELOPMENT CLUSTER
-stop-dev:
-	scripts/stop-dev.sh $(clustername)
+## STOP CLUSTER
+stop-cluster:
+	scripts/stop-cluster.sh $(clustername)
 
-## RESTART DEVELOPMENT CLUSTER
-restart-dev:
-	scripts/restart-dev.sh $(clustername)
+## RESTART CLUSTER
+restart-cluster:
+	scripts/restart-cluster.sh $(clustername)

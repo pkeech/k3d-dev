@@ -31,30 +31,33 @@ This project was created to demostrate how to use a local K3D cluster for develo
 
 3. Duplicate `Tiltfile.example` and rename it to `Tiltfile`
 4. Modify `Tiltfile` to point to your development project
+5. Add Static Hostfile Entry
+
+  `127.0.0.1 example-app.k3d.localhost`
 
 ### Deployment
 
-After completing the Setup steps, you can deploy a development cluster by simply running the following command:
+After completing the Setup steps, you can deploy a cluster by simply running the following command:
 
-`make create-dev`
+`make create-cluster`
 
 Additionally, you can specify a unique name for your cluster if you have/want multiple K3D clusters. 
 
-`make create-dev -e clustername=myspecialname`
+`make create-cluster -e clustername=myspecialname`
 
 **Note**: Don't forget, if you specify a unique name for your cluster, you will have to specify the name for every command you run. 
 
 ```
-make stop-dev -e clustername=myspecialname
-make restart-dev -e clustername=myspecialname
-make delete-dev -e clustername=myspecialname
+make stop-cluster -e clustername=myspecialname
+make restart-cluster -e clustername=myspecialname
+make delete-cluster -e clustername=myspecialname
 ```
 
 ### Removal
 
-You can destroy a development cluster by simply running the following command:
+You can destroy a cluster by simply running the following command:
 
-`make delete-dev`
+`make delete-cluster`
 
 ### Temporarly Stopping the Cluster
 
@@ -64,11 +67,19 @@ One of the many benefits of K3D is the ability to start/stop a cluster as and wh
 
 ```
 ## STOP CLUSTER
-make stop-dev
+make stop-cluster
 
 ## RESTART CLUSTER
-make restart-dev
+make restart-cluster
 ```
+
+### Example Application & Your Applications
+
+By running the commands 
+
+### Multi-Cluster Support
+
+*placeholder*
 
 ### Shout Outs & References
 

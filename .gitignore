@@ -1,1 +1,4 @@
-Tiltfile
+## IGNORE TILTFILES EXCEPT DEMO AND OUTLINE
+tilt/*
+!tilt/example.Tiltfile
+!tilt/outline.Tiltfile
