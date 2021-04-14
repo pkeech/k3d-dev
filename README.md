@@ -23,8 +23,11 @@ This project was created to demostrate how to use a local K3D cluster for develo
 ### Setup
 
 1. Navigate to the root of the source repository
-2. Pre-Stage local Docker Instance. **Warning**: This will purge all Docker Images, Volumes and Networks
+2. Pre-Stage local Docker Instance. 
+
+**Warning**: This will purge all Docker Images, Volumes and Networks
   `make prep`
+
 3. Duplicate `Tiltfile.example` and rename it to `Tiltfile`
 4. Modify `Tiltfile` to point to your development project
 
